@@ -1,0 +1,15 @@
+<div class="container">
+    <form>
+        <h3>LOGIN</h3>
+       <div class="form-group">
+        <input type="email" class="form-control" name="email" placeholder="Email ID" [(ngModel)]="loginEmailId"/> 
+       </div>
+       <div class="form-group">
+        <input type="password" class="form-control" name="password" placeholder="Password" [(ngModel)]="loginPassword"/> 
+       </div>
+       <div class="form-group">
+        <input type="button" class="btn btn-primary" (click)="login()" value="Login" router-link="/home"> 
+        <input type="button" class="btn btn-success ml-4" router-link="/register" (click)="register()" value="Register"/> 
+       </div>
+    </form>
+</div>
